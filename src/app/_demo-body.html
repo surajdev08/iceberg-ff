@@ -1,0 +1,1178 @@
+
+
+
+  <!-- Background Radial Glows for Deep Arctic Aura -->
+  <div class="glow-container">
+    <div class="radial-glow glow-top-right"></div>
+    <div class="radial-glow glow-bottom-left"></div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="nav-wrapper">
+      <a href="#" class="logo" id="header-logo">
+        <svg class="logo-icon" viewBox="0 0 100 100">
+          <polygon points="50,10 85,85 15,85" stroke="var(--primary-cyan)" stroke-width="6" fill="rgba(0, 240, 255, 0.1)"/>
+          <polyline points="50,25 65,55 35,55 50,25" stroke="var(--primary-cyan)" stroke-width="3" fill="none"/>
+          <line x1="15" y1="90" x2="85" y2="90" stroke="var(--primary-cyan)" stroke-width="4"/>
+        </svg>
+        <span>ICEBERG</span>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#comparison" class="nav-link">Comparison</a></li>
+          <li><a href="#mobile" class="nav-link">Download</a></li>
+          <li><a href="#roadmap" class="nav-link">Events</a></li>
+          <li><a href="#technology" class="nav-link">Partners</a></li>
+          <li><a href="#faq" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Interactive Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Color Theme">
+          <svg class="theme-toggle-icon" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z"/>
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-header-demo">Get Demo</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Next-Gen Trading Platform Launch)
+         ========================================================================== -->
+    <section class="section hero" id="home">
+      <!-- Confined Snowfall Canvas -->
+      <canvas id="snowfall-canvas"></canvas>
+
+      <div class="container grid hero-grid">
+        
+        <!-- Hero Details & Primary CTAs -->
+        <div class="hero-content">
+          <h1>Advanced Trading Platform Powered by Iceberg HQ</h1>
+          <p class="hero-subtitle">
+            Experience next-generation trading with the ICEBERG platform. Powered by Iceberg HQ technology, delivering institutional-grade execution, advanced analytics, and seamless multi-asset trading for professional brokerages and prop firms.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start Trading Demo</a>
+            <a href="#hero-dashboard-mockup" class="btn btn-secondary">Web Terminal Preview</a>
+          </div>
+
+          <div class="hero-latency-badge">
+            <div class="latency-item">
+              <span class="latency-title">Average Execution</span>
+              <span class="latency-value green">0.72ms</span>
+            </div>
+            <div class="latency-item">
+              <span class="latency-title">Active Instruments</span>
+              <span class="latency-value">1,000+</span>
+            </div>
+            <div class="latency-item">
+              <span class="latency-title">Global Latency</span>
+              <span class="latency-value">&lt; 16ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive High-Tech Trading Dashboard Mockup -->
+        <div class="hero-visual">
+          <div class="dashboard-mockup glass-panel frost-border" id="hero-dashboard-mockup">
+            
+            <!-- Terminal Header Controls -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="terminal-title">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5zm-4 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9z"/></svg>
+                ICEBERG TERMINAL v2.8 (LIVE FEED)
+              </div>
+              <div class="terminal-toggle">
+                <button class="active" id="btn-term-dark">DARK</button>
+                <button id="btn-term-light">LIGHT</button>
+              </div>
+            </div>
+
+            <!-- Terminal Interior -->
+            <div class="terminal-body">
+              
+              <!-- Real-time Chart Sandbox -->
+              <div class="terminal-chart-area">
+                <div class="chart-legend">
+                  <span class="chart-symbol">BTC/USD (BITCOIN)</span>
+                  <span>Interval: 1m</span>
+                </div>
+                <div class="chart-canvas-container">
+                  <canvas id="hero-canvas"></canvas>
+                </div>
+              </div>
+
+              <!-- Order Book Widget -->
+              <div class="terminal-sidebar">
+                <div class="sidebar-title">Order Book Ledger</div>
+                <div class="order-book" id="live-order-book">
+                  <!-- JS dynamically populates order grids -->
+                </div>
+                <div class="trade-latency-ping">
+                  <svg width="10" height="10" viewBox="0 0 100 100" style="fill:currentColor;"><circle cx="50" cy="50" r="40"></circle></svg>
+                  <span>GATEWAY OK (0.72ms)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Decorative Floating Indicators -->
+          <div class="floating-element float-execution">
+            <div class="floating-icon">⚡</div>
+            <div class="floating-text">Sub-1ms Latency</div>
+            <div class="floating-sub">Direct Tier-1 Execution</div>
+          </div>
+          <div class="floating-element float-liquidity">
+            <div class="floating-icon">💧</div>
+            <div class="floating-text">Aggregated Pools</div>
+            <div class="floating-sub">Deep Institutional Depth</div>
+          </div>
+
+          <!-- Floating Polar Bear Scalper on Iceberg -->
+          <div class="floating-bear-card glass-panel frost-border">
+            <img src="assets/images/polar_bear_trading.png" alt="Polar Bear Trading on Iceberg" class="bear-img">
+            <div class="bear-caption">
+              <span class="bear-dot"></span>
+              ICE-BEAR PRO-SCALPER v1.0
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Iceberg & Ocean Water visual divider -->
+      <div class="hero-bottom-divider">
+
+        <!-- LAYER 1: Deep Back Wave SVG -->
+        <svg class="ice-ocean-svg wave-svg-back" viewBox="0 0 1440 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="grad-ocean-deep" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#040914" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#02040a" stop-opacity="1" />
+            </linearGradient>
+          </defs>
+          <path class="ocean-wave-deep" d="M0,90 C360,130 720,50 1080,110 C1260,140 1380,110 1440,90 L1440,160 L0,160 Z" fill="url(#grad-ocean-deep)"></path>
+        </svg>
+
+        <!-- Majestic Faceted Vector Iceberg 1 (Left, Large) - sandwiched behind Middle wave -->
+        <svg class="real-iceberg iceberg-left" viewBox="0 0 200 300" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="iceberg-underwater-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#0081a0" stop-opacity="0.6" />
+              <stop offset="40%" stop-color="#004a5c" stop-opacity="0.35" />
+              <stop offset="100%" stop-color="#040914" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="ice-light-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="100%" stop-color="#d4f9fc" />
+            </linearGradient>
+            <linearGradient id="ice-cyan-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#00f0ff" />
+              <stop offset="100%" stop-color="#00a2ff" />
+            </linearGradient>
+          </defs>
+          <!-- Submerged Base (Tip of the Iceberg) -->
+          <polygon points="30,160 100,285 170,160" fill="url(#iceberg-underwater-grad)" />
+          <!-- Above-Water Shadow Facets -->
+          <polygon points="100,20 30,160 100,160" fill="#0d4f5c" />
+          <polygon points="100,20 100,160 135,160" fill="#063b46" />
+          <!-- Midtone Facets -->
+          <polygon points="100,20 65,100 100,160" fill="#156e82" />
+          <polygon points="100,20 100,160 125,110" fill="#208b9f" />
+          <!-- Neon & Frost Highlight Facets -->
+          <polygon points="100,20 30,160 65,100" fill="url(#ice-light-grad)" />
+          <polygon points="100,20 125,110 170,160" fill="url(#ice-cyan-grad)" />
+          <!-- Center Sharp Crystalline Crest -->
+          <polygon points="100,20 92,90 100,160" fill="#ffffff" opacity="0.9" />
+        </svg>
+
+        <!-- LAYER 2: Middle Glacier Wave SVG -->
+        <svg class="ice-ocean-svg wave-svg-mid" viewBox="0 0 1440 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="grad-ocean-mid" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#002f3c" stop-opacity="0.3" />
+              <stop offset="50%" stop-color="#006b85" stop-opacity="0.5" />
+              <stop offset="100%" stop-color="#002f3c" stop-opacity="0.3" />
+            </linearGradient>
+          </defs>
+          <path class="ocean-wave-mid" d="M0,110 C240,70 480,130 720,100 C960,70 1200,130 1440,110 L1440,160 L0,160 Z" fill="url(#grad-ocean-mid)"></path>
+        </svg>
+
+        <!-- Majestic Faceted Vector Iceberg 2 (Right, Medium) - sandwiched behind Front wave -->
+        <svg class="real-iceberg iceberg-right" viewBox="0 0 160 220" preserveAspectRatio="none">
+          <!-- Submerged Base -->
+          <polygon points="25,120 80,205 135,120" fill="url(#iceberg-underwater-grad)" />
+          <!-- Shadow Facets -->
+          <polygon points="80,15 25,120 80,120" fill="#0c4b57" />
+          <polygon points="80,15 80,120 115,120" fill="#05333d" />
+          <!-- Midtones -->
+          <polygon points="80,15 55,70 80,120" fill="#126274" />
+          <polygon points="80,15 80,120 105,80" fill="#1c7c8e" />
+          <!-- Neon & Frost Highlights -->
+          <polygon points="80,15 25,120 55,70" fill="url(#ice-light-grad)" />
+          <polygon points="80,15 105,80 135,120" fill="url(#ice-cyan-grad)" />
+          <!-- Center Crest -->
+          <polygon points="80,15 74,60 80,120" fill="#ffffff" opacity="0.95" />
+        </svg>
+
+        <!-- LAYER 3: Front Wave SVG -->
+        <svg class="ice-ocean-svg wave-svg-front" viewBox="0 0 1440 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="grad-ocean-front" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.12" />
+              <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.25" />
+              <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.12" />
+            </linearGradient>
+          </defs>
+          <path class="ocean-wave-front" d="M0,130 C300,160 600,110 900,140 C1200,170 1350,140 1440,130 L1440,160 L0,160 Z" fill="url(#grad-ocean-front)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED IN MEDIA SECTION (Scrolling Ribbon - Exactly Matches X9Trader list)
+         ========================================================================== -->
+    <section class="media-ticker-section">
+      <div class="media-ticker-title">Featured across Global Financial Media</div>
+      <div class="media-logo-carousel">
+        <div class="media-logo-strip">
+          <div class="media-logo-item">Yahoo</div>
+          <div class="media-logo-item">MSN</div>
+          <div class="media-logo-item">Benzinga</div>
+          <div class="media-logo-item">Yahoo Finance</div>
+          <div class="media-logo-item">Business Insider</div>
+          <div class="media-logo-item">Digital Journal</div>
+          <div class="media-logo-item">IPS OpenPR</div>
+          <div class="media-logo-item">TechBullion</div>
+          <!-- Duplicate for seamless scroll -->
+          <div class="media-logo-item">Yahoo</div>
+          <div class="media-logo-item">MSN</div>
+          <div class="media-logo-item">Benzinga</div>
+          <div class="media-logo-item">Yahoo Finance</div>
+          <div class="media-logo-item">Business Insider</div>
+          <div class="media-logo-item">Digital Journal</div>
+          <div class="media-logo-item">IPS OpenPR</div>
+          <div class="media-logo-item">TechBullion</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LIVE TICKER BANNER SECTION
+         ========================================================================== -->
+    <section class="price-ticker-strip">
+      <div class="price-ticker-track" id="price-ticker-track">
+        <!-- JS dynamically populates rolling currency cards -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNOLOGY STACK GRID (Interactive Features)
+         ========================================================================== -->
+    <section class="section tech-stack-section" id="technology">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Powered by Industry-Leading Technologies</h2>
+          <p>Our robust tech stack ensures scalability, reliability, and cutting-edge performance for institutional-grade trading platforms.</p>
+        </div>
+
+        <div class="grid tech-grid">
+          
+          <!-- Technology Selector Cards Grid -->
+          <div class="tech-cards-container">
+            <div class="tech-card glass-panel frost-border active" data-tech="python">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </div>
+              <h3>Python Core</h3>
+              <p>High-performance backend services and algorithmic trading engines powered by Python's robust ecosystem.</p>
+            </div>
+
+            <div class="tech-card glass-panel frost-border" data-tech="angular">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 10L2 17l10 5 10-5-10-5z"/></svg>
+              </div>
+              <h3>Angular UI</h3>
+              <p>Modern, responsive trading interfaces built with Angular for seamless user experience and real-time data visualization.</p>
+            </div>
+
+            <div class="tech-card glass-panel frost-border" data-tech="aurora">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10h3l-4-4-4 4h3v4h2v-4z"/></svg>
+              </div>
+              <h3>AWS Aurora</h3>
+              <p>Enterprise-grade database performance with Aurora's MySQL and PostgreSQL compatibility for mission-critical data.</p>
+            </div>
+
+            <div class="tech-card glass-panel frost-border" data-tech="rabbitmq">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/></svg>
+              </div>
+              <h3>RabbitMQ Broker</h3>
+              <p>Reliable message queuing for high-frequency trading operations and real-time market data distribution.</p>
+            </div>
+
+            <div class="tech-card glass-panel frost-border" data-tech="redis">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10V7h-2v5H7v2h4v5h2v-5h4v-2h-4z"/></svg>
+              </div>
+              <h3>Redis Cache</h3>
+              <p>Ultra-fast in-memory caching and session management for sub-millisecond data access and trading execution.</p>
+            </div>
+
+            <div class="tech-card glass-panel frost-border" data-tech="kubernetes">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 10L2 17l10 5 10-5-10-5z"/></svg>
+              </div>
+              <h3>Kubernetes Grid</h3>
+              <p>Scalable container orchestration ensuring high availability and seamless deployment of trading infrastructure.</p>
+            </div>
+          </div>
+
+          <!-- Dynamic Details Output Display Panel -->
+          <div class="tech-detail-panel glass-panel frost-border">
+            <div class="tech-detail-header">
+              <div class="tech-detail-icon" id="tech-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </div>
+              <div class="tech-detail-title">
+                <span id="tech-detail-sub">Algorithmic Engines & Analytics</span>
+                <h3 id="tech-detail-title-text">Python Core</h3>
+              </div>
+            </div>
+            <div class="tech-detail-body">
+              <p id="tech-detail-desc">Our high-performance core uses optimized Cython and native multi-threading algorithms to process immense sets of real-time financial matrices. Built directly for institutional traders requiring sub-millisecond mathematical analysis and custom strategy integrations.</p>
+              
+              <div class="tech-metrics-list">
+                <div class="tech-metric-row">
+                  <span class="tech-metric-name">PROCESSING SPEED</span>
+                  <span class="tech-metric-val cyan" id="m-latency">&lt; 0.45ms Processing</span>
+                </div>
+                <div class="tech-metric-row">
+                  <span class="tech-metric-name">TRANSACTION CAPACITY</span>
+                  <span class="tech-metric-val" id="m-capacity">500,000 strategy loops/sec</span>
+                </div>
+                <div class="tech-metric-row">
+                  <span class="tech-metric-name">SYSTEM ISOLATION</span>
+                  <span class="tech-metric-val" id="m-security">Isolated Sandbox Environments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CORE STATISTICS / COUNTERS SECTION
+         ========================================================================== -->
+    <section class="section latency-stats-section">
+      <div class="container">
+        <div class="grid stats-grid">
+          
+          <div class="stat-card glass-panel frost-border">
+            <div class="stat-num">46+</div>
+            <div class="stat-label">Team Members</div>
+            <div class="stat-description">Building advanced platform tools and API nodes round the clock.</div>
+          </div>
+
+          <div class="stat-card glass-panel frost-border">
+            <div class="stat-num">0.72ms</div>
+            <div class="stat-label">Average Execution Time</div>
+            <div class="stat-description">Lightning speed matching engines connecting directly to prime brokers.</div>
+          </div>
+
+          <div class="stat-card glass-panel frost-border">
+            <div class="stat-num">1,000+</div>
+            <div class="stat-label">Active Instruments</div>
+            <div class="stat-description">Multi-asset catalog including major FX, Crypto, Metals, Indices.</div>
+          </div>
+
+          <div class="stat-card glass-panel frost-border">
+            <div class="stat-num">99.99%</div>
+            <div class="stat-label">Server Uptime</div>
+            <div class="stat-description">Redundant nodes distributed globally ensuring zero service cuts.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         A PLATFORM FOR EVERY MARKET (Creative Interactive Sandbox Playground)
+         ========================================================================== -->
+    <section class="section markets-playground-section" id="markets">
+      <div class="container">
+        <div class="section-intro">
+          <h2>A Platform for Every Market</h2>
+          <p>Trade everything in one place: FX, crypto, stocks, commodities, indices, and more with ICEBERG's unified trading platform. Experience instant mock trade executions.</p>
+        </div>
+
+        <div class="markets-playground glass-panel frost-border">
+          <!-- Left-side Asset Tabs -->
+          <div class="markets-tabs">
+            <button class="market-tab-btn active" data-asset="FX">
+              <span>💱</span> FX
+            </button>
+            <button class="market-tab-btn" data-asset="STOCKS">
+              <span>📈</span> Stocks
+            </button>
+            <button class="market-tab-btn" data-asset="COMMODITIES">
+              <span>🔥</span> Commodities
+            </button>
+            <button class="market-tab-btn" data-asset="INDICES">
+              <span>📊</span> Indices
+            </button>
+            <button class="market-tab-btn" data-asset="CRYPTO">
+              <span>🪙</span> Cryptocurrencies
+            </button>
+            <button class="market-tab-btn" data-asset="STOCKCFD">
+              <span>🏢</span> Stock CFDs
+            </button>
+            <button class="market-tab-btn" data-asset="METALS">
+              <span>🏆</span> Metals
+            </button>
+            <button class="market-tab-btn" data-asset="TRADECFD">
+              <span>🚀</span> Trade CFDs
+            </button>
+          </div>
+
+          <!-- Right-side Trade Execution Panel -->
+          <div class="market-execution-sandbox">
+            <div class="sandbox-display-header">
+              <div class="asset-title-group">
+                <span class="sandbox-asset-icon">💱</span>
+                <div>
+                  <h3 id="sandbox-asset-name">EUR/USD (Euro / US Dollar)</h3>
+                  <span class="sandbox-asset-category" id="sandbox-asset-cat">Currency Pair</span>
+                </div>
+              </div>
+              <div class="sandbox-spread-badge">
+                SPREAD: <span id="sandbox-spread-val">0.3 pips</span>
+              </div>
+            </div>
+
+            <!-- Pricing Box Grid -->
+            <div class="sandbox-pricing-grid">
+              <div class="sandbox-price-box sell">
+                <span class="price-box-label">SELL RATE</span>
+                <h4 id="sandbox-sell-rate">1.08448</h4>
+                <p>Fluctuating live</p>
+              </div>
+              <div class="sandbox-price-box buy">
+                <span class="price-box-label">BUY RATE</span>
+                <h4 id="sandbox-buy-rate">1.08451</h4>
+                <p>Fluctuating live</p>
+              </div>
+            </div>
+
+            <!-- Controller Sliders -->
+            <div class="sandbox-controls">
+              <div class="control-group">
+                <label class="control-label">Leverage Multiplier: <span id="sandbox-leverage-text">1:100</span></label>
+                <input type="range" class="sandbox-range" id="sandbox-leverage-slider" min="10" max="500" step="10" value="100">
+              </div>
+              <div class="control-group">
+                <label class="control-label">Order Volume (Lots): <span id="sandbox-volume-text">1.00</span></label>
+                <input type="range" class="sandbox-range" id="sandbox-volume-slider" min="0.1" max="10.0" step="0.1" value="1.0">
+              </div>
+            </div>
+
+            <!-- Instant Actions -->
+            <div class="sandbox-actions">
+              <button class="btn btn-secondary btn-sandbox-trigger sell" id="btn-sandbox-sell">PLACE SELL ORDER</button>
+              <button class="btn btn-primary btn-sandbox-trigger buy" id="btn-sandbox-buy">PLACE BUY ORDER</button>
+            </div>
+
+            <!-- Live Terminal log window -->
+            <div class="sandbox-terminal-log" id="sandbox-terminal-log">
+              <div class="terminal-log-line init">&gt; ICEBERG MATCHING ENGINE INITIALIZED...</div>
+              <div class="terminal-log-line init">&gt; Awaiting order parameters... Select asset and click BUY or SELL.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE TRADING SOLUTIONS CAROUSEL
+         ========================================================================== -->
+    <section class="section solutions-section" id="solutions">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Trading Solutions</h2>
+          <p>Iceberg provides deep multi-tier modules custom engineered to scale modern forex brokerages and proprietary firms.</p>
+        </div>
+
+        <div class="solutions-wrapper">
+          
+          <!-- Side Selection Menu -->
+          <div class="solutions-menu">
+            <button class="solutions-menu-btn active" data-slide="analytics">
+              <span class="solutions-btn-num">01</span>
+              <div class="solutions-btn-info">
+                <h3>Trading Analytics</h3>
+                <p>Advanced trading analytics and real-time market data visualization for informed decision making.</p>
+              </div>
+            </button>
+
+            <button class="solutions-menu-btn" data-slide="risk">
+              <span class="solutions-btn-num">02</span>
+              <div class="solutions-btn-info">
+                <h3>Risk Management</h3>
+                <p>Comprehensive risk management tools with real-time monitoring and automated controls.</p>
+              </div>
+            </button>
+
+            <button class="solutions-menu-btn" data-slide="liquidity">
+              <span class="solutions-btn-num">03</span>
+              <div class="solutions-btn-info">
+                <h3>Liquidity Pools</h3>
+                <p>Deep liquidity pools with competitive spreads ensuring optimal execution for all order sizes.</p>
+              </div>
+            </button>
+
+            <button class="solutions-menu-btn" data-slide="fix-api">
+              <span class="solutions-btn-num">04</span>
+              <div class="solutions-btn-info">
+                <h3>FIX API Integration</h3>
+                <p>Professional FIX API integration with ultra-low latency connectivity for institutional trading.</p>
+              </div>
+            </button>
+          </div>
+
+          <!-- Display Showcase Panel (CSS/HTML Styled Cards) -->
+          <div class="solutions-display-panel glass-panel frost-border">
+            
+            <!-- Slide 1: Analytics -->
+            <div class="solutions-display-card active" data-card="analytics">
+              <div class="solutions-card-bg" style="background-image: radial-gradient(circle at center, #0077b6 0%, #030712 100%);"></div>
+              <div class="solutions-card-overlay"></div>
+              <div class="solutions-card-content">
+                <span class="solutions-card-tag">Advanced Telemetry</span>
+                <h3>High-Fidelity Trading Analytics</h3>
+                <p>Access advanced client-side technical charting suites. Render complex moving averages, drawing layers, and indicators. Track client profitability and volume patterns instantly from a secure administrator backoffice panel.</p>
+                <a href="#contact" class="btn btn-primary btn-sm">Explore Analytics Demo</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: Risk -->
+            <div class="solutions-display-card" data-card="risk">
+              <div class="solutions-card-bg" style="background-image: radial-gradient(circle at center, #ff1744 0%, #030712 100%);"></div>
+              <div class="solutions-card-overlay"></div>
+              <div class="solutions-card-content">
+                <span class="solutions-card-tag">Equity Protection</span>
+                <h3>Automated Risk Management</h3>
+                <p>Perfect for Prop Firms seeking reliable rule enforcements. Control client drawdowns, automate stop-out thresholds, adjust live leverages across accounts, and prevent latency arbitrage instantly using multi-level algorithmic defense guards.</p>
+                <a href="#contact" class="btn btn-primary btn-sm">Verify Risk Protocols</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: Liquidity -->
+            <div class="solutions-display-card" data-card="liquidity">
+              <div class="solutions-card-bg" style="background-image: radial-gradient(circle at center, #00b4d8 0%, #030712 100%);"></div>
+              <div class="solutions-card-overlay"></div>
+              <div class="solutions-card-content">
+                <span class="solutions-card-tag">Tier-1 Feeds</span>
+                <h3>Aggregated Liquidity Pools</h3>
+                <p>Connect your custom platform to the deepest market pools. Rest easy under heavy volumes with tight institutional spreads, instant matching routes, and custom clearance lanes with key prime brokers worldwide.</p>
+                <a href="#contact" class="btn btn-primary btn-sm">Request Liquidity Spreads</a>
+              </div>
+            </div>
+
+            <!-- Slide 4: FIX API -->
+            <div class="solutions-display-card" data-card="fix-api">
+              <div class="solutions-card-bg" style="background-image: radial-gradient(circle at center, #030712 0%, #050c18 100%);"></div>
+              <div class="solutions-card-overlay"></div>
+              <div class="solutions-card-content">
+                <span class="solutions-card-tag">Institutional Bridge</span>
+                <h3>FIX / REST API Interconnections</h3>
+                <p>Provide professional algorithmic systems with direct programmatic gateways. Iceberg REST and FIX APIs deliver lightning fast updates and instant order submission pathways under sub-10 millisecond roundtrip times.</p>
+                <a href="#contact" class="btn btn-primary btn-sm">Review API Manual</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PLATFORM COMPARISON MATRIX
+         ========================================================================== -->
+    <section class="section comparison-section" id="comparison">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Platform Comparison</h2>
+          <p>See why major international firms trust ICEBERG over standard, aging industry software suites.</p>
+        </div>
+
+        <div class="comparison-wrapper glass-panel frost-border">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th class="brand-col">ICEBERG CORE</th>
+                <th>MetaTrader 4</th>
+                <th>MetaTrader 5</th>
+                <th>cTrader</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Average Matching Time</td>
+                <td class="brand-col">&lt; 0.72ms</td>
+                <td>&gt; 80ms</td>
+                <td>&gt; 45ms</td>
+                <td>&gt; 22ms</td>
+              </tr>
+              <tr>
+                <td>REST & FIX API Latency</td>
+                <td class="brand-col">Sub-1ms API Loops</td>
+                <td>Not Supported</td>
+                <td>Bridge Required</td>
+                <td>Restricted</td>
+              </tr>
+              <tr>
+                <td>Branding Liberty (100% White-label)</td>
+                <td class="brand-col">
+                  <svg class="comp-check-icon" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </td>
+                <td>Restricted</td>
+                <td>Partial Branding</td>
+                <td>Restricted</td>
+              </tr>
+              <tr>
+                <td>Prop Firm Rules Enforcement Engine</td>
+                <td class="brand-col">
+                  <svg class="comp-check-icon" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </td>
+                <td>Plugins Required</td>
+                <td>Plugins Required</td>
+                <td>Limited Custom</td>
+              </tr>
+              <tr>
+                <td>Dynamic Risk & Leverage Multiplier</td>
+                <td class="brand-col">
+                  <svg class="comp-check-icon" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </td>
+                <td>Manual Adjustment</td>
+                <td>Limited Rules</td>
+                <td>API Dependent</td>
+              </tr>
+              <tr>
+                <td>Custom CRM & Portal Integrations</td>
+                <td class="brand-col">
+                  <svg class="comp-check-icon" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </td>
+                <td>Third Party Bridge</td>
+                <td>Restricted Nodes</td>
+                <td>Partial Ports</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         POWERFUL TRADING FEATURES (Interactive Matrix)
+         ========================================================================== -->
+    <section class="section powerful-features-section" id="features">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Powerful Trading Features</h2>
+          <p>Institutional-grade tools engineered for professional trading environments, delivering absolute control and extreme capabilities.</p>
+        </div>
+
+        <div class="features-interactive-grid">
+          
+          <div class="feature-badge-card glass-panel frost-border" data-f="order">
+            <div class="f-badge-icon">🎯</div>
+            <h3>Advanced Order Types</h3>
+            <p>Implement sophisticated stop-loss, take-profit, OCO, and limit orders instantly.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="ai">
+            <div class="f-badge-icon">🤖</div>
+            <h3>AI-Driven Trading</h3>
+            <p>Harness artificial intelligence engines for real-time market sentiment updates.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="latency">
+            <div class="f-badge-icon">⚡</div>
+            <h3>Ultra-Low Latency</h3>
+            <p>Sub-millisecond execution cores bypassing high-frequency trade slippage.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="liquidity">
+            <div class="f-badge-icon">💧</div>
+            <h3>Deep Liquidity</h3>
+            <p>Aggregated Tier-1 liquid channels ensuring consistent multi-million fills.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="risk">
+            <div class="f-badge-icon">🛡️</div>
+            <h3>Risk Management</h3>
+            <p>Automated equity protections, margin alerts, and dynamic leverage limits.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="analysis">
+            <div class="f-badge-icon">📊</div>
+            <h3>Market Analysis Tools</h3>
+            <p>Dozens of premium drawing models, indicator sets, and volume tickers.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="data">
+            <div class="f-badge-icon">📡</div>
+            <h3>Real-Time Data</h3>
+            <p>Direct binary tick feeds from major global financial exchanges.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="multi">
+            <div class="f-badge-icon">🗺️</div>
+            <h3>Multi-Asset Trading</h3>
+            <p>Unified catalog containing FX, crypto, stocks, index lists, and commodities.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="api">
+            <div class="f-badge-icon">🔌</div>
+            <h3>Advanced APIs</h3>
+            <p>Fully compliant standard REST/FIX protocols for algorithmic integrations.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="automation">
+            <div class="f-badge-icon">⚙️</div>
+            <h3>Trading Automation</h3>
+            <p>Code, compile, test, and run native automated scripts on active nodes.</p>
+          </div>
+
+          <div class="feature-badge-card glass-panel frost-border" data-f="institution">
+            <div class="f-badge-icon">🏛️</div>
+            <h3>Institution-Grade Tools</h3>
+            <p>White-label options custom engineered for modern prop firms and broker systems.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MOBILE FIRST APPROACH SECTION
+         ========================================================================== -->
+    <section class="section mobile-section" id="mobile">
+      <div class="container grid mobile-grid">
+        
+        <!-- Elegant Smartphone Canvas Simulator Mockup -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-header">
+                <span>ICEBERG MOBILE</span>
+                <span class="phone-logo">ICE</span>
+              </div>
+              
+              <!-- Smartphone Dynamic Canvas Chart -->
+              <div class="phone-chart-widget">
+                <div class="phone-chart-meta">
+                  <span class="phone-symbol">EUR/USD</span>
+                  <span class="phone-price" id="phone-price-val">1.08451</span>
+                </div>
+                <div class="phone-chart-visual">
+                  <canvas id="phone-canvas"></canvas>
+                </div>
+              </div>
+
+              <div class="phone-actions">
+                <button class="phone-btn buy">BUY ORDER</button>
+                <button class="phone-btn sell">SELL ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details list -->
+        <div class="mobile-details">
+          <div class="hero-tag">
+            <span class="tag-dot"></span>
+            Seamless Mobility
+          </div>
+          <h2>Markets in your Pocket</h2>
+          <p style="margin-bottom: 3rem;">ICEBERG's mobile-first interface ensures direct access to order matching and trading analytics, wherever you go.</p>
+
+          <div class="mobile-features-list">
+            <div class="mobile-feature-item">
+              <div class="m-feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+              </div>
+              <div class="m-feat-text">
+                <h3>Native Mobile Experience</h3>
+                <p>Optimized for iOS and Android with intuitive touch controls and seamless navigation designed for professional traders on the go.</p>
+              </div>
+            </div>
+
+            <div class="mobile-feature-item">
+              <div class="m-feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              </div>
+              <div class="m-feat-text">
+                <h3>Real-Time Market Data</h3>
+                <p>Live quotes, advanced charts, and instant order execution with the same speed and reliability as our desktop platform.</p>
+              </div>
+            </div>
+
+            <div class="mobile-feature-item">
+              <div class="m-feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              </div>
+              <div class="m-feat-text">
+                <h3>Bank-Grade Security</h3>
+                <p>Biometric authentication, encrypted data transmission, and secure account management protect your trading capital 24/7.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         IMPLEMENTATION PIPELINE ROADMAP
+         ========================================================================== -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Deployment & Integration Roadmap</h2>
+          <p>Get your fully branded white-label ICEBERG node set up, connected, and functional in just four streamlined stages.</p>
+        </div>
+
+        <div class="roadmap-stepper">
+          
+          <div class="roadmap-step active">
+            <div class="step-num">01</div>
+            <div class="step-text">
+              <h3>Requirements Analysis</h3>
+              <p>We assess your brokerage needs, client base, regulatory requirements, and technical infrastructure to design the optimal ICEBERG implementation for your business model.</p>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">02</div>
+            <div class="step-text">
+              <h3>Platform Deployment & Branding</h3>
+              <p>Our team deploys ICEBERG with your custom branding, configures user management systems, and sets up risk management parameters tailored to your brokerage operations.</p>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">03</div>
+            <div class="step-text">
+              <h3>Client Onboarding & Training</h3>
+              <p>Launch your branded trading platform with comprehensive client onboarding tools, training materials, and support systems to ensure smooth adoption by your traders.</p>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">04</div>
+            <div class="step-text">
+              <h3>Ongoing Partnership & Growth</h3>
+              <p>24/7 technical support, regular platform updates, performance monitoring, and business development assistance to help scale your brokerage operations.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FREQUENTLY ASKED QUESTIONS SECTION (Exactly Maps X9Trader List)
+         ========================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Frequently Asked Questions</h2>
+          <p>Answers to the most frequently asked questions about ICEBERG platform and services.</p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item glass-panel frost-border active">
+            <button class="faq-trigger">
+              <h3>What makes ICEBERG different from other trading platforms?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content" style="max-height: 200px;">
+              <div class="faq-content-inner">
+                ICEBERG offers institutional-grade technology with ultra-low latency execution, advanced risk management, white-label solutions for brokers, and comprehensive API integration. Our platform is built specifically for professional trading environments.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel frost-border">
+            <button class="faq-trigger">
+              <h3>How quickly can I implement ICEBERG for my brokerage?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                A standard deployment, including brand compilations, server configurations across AWS global zones, and standard CRM links can be fully completed in under 7 business days depending on client configuration scopes.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel frost-border">
+            <button class="faq-trigger">
+              <h3>What support do you provide during and after implementation?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We provide complete 24/7/365 active technical surveillance. You will be assigned a dedicated engineering team, accessible directly via Slack, Telegram, and hot-line channels to handle all server upgrades, bridge queries, or maintenance operations.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel frost-border">
+            <button class="faq-trigger">
+              <h3>Is ICEBERG suitable for both forex brokers and prop firms?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes, absolutely. ICEBERG has native prop firm and white-label broker tools built directly into its core engine. You can enforce step-1/step-2 rules, set daily/total drawdown stopouts, define leverage restrictions, and audit strategy compliance without purchasing external plugins.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel frost-border">
+            <button class="faq-trigger">
+              <h3>Can I customize the platform with my company branding?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes, completely. Our white-label license allows 100% brand personalization, enabling you to deploy custom logos, fonts, active web domains, color palettes, and styled client cabinets without any back-channel restrictions.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel frost-border">
+            <button class="faq-trigger">
+              <h3>What are the technical requirements for ICEBERG?</h3>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                ICEBERG is designed as a cloud-native platform. Client interfaces are built on optimized HTML5 frameworks requiring no local installs. Broker nodes operate on secure global AWS container instances matching deep ledger infrastructure limits.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LEAD CAPTURE / REQUEST DEMO FORM
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container grid contact-grid">
+        
+        <!-- Info panel -->
+        <div class="contact-info-panel">
+          <div class="hero-tag">
+            <span class="tag-dot"></span>
+            Connect with Experts
+          </div>
+          <h2>Scale your Brokerage or Prop Firm today</h2>
+          <p>Schedule a live 1-on-1 demonstration with our engineering specialists. Let us show you how the ICEBERG ecosystem can optimize your operational margins and execution flows.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-card">
+              <div class="c-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div class="c-detail-text">
+                <span>direct operations email</span>
+                <p>solutions@iceberghq.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-card">
+              <div class="c-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="c-detail-text">
+                <span>global operation center</span>
+                <p>London EC2N, United Kingdom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lead Form -->
+        <div class="contact-form-panel glass-panel frost-border">
+          <form id="iceberg-contact-form">
+            <div class="form-group">
+              <label class="form-label" for="c-name">Full Name</label>
+              <input type="text" id="c-name" class="form-input" placeholder="e.g., Alex Carter" required>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="c-email">Business Email</label>
+              <input type="email" id="c-email" class="form-input" placeholder="e.g., alex@firmname.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-firm">Company Name</label>
+              <input type="text" id="c-firm" class="form-input" placeholder="e.g., Carter Prop Solutions" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-msg">Brokerage Requirements / Project Scope</label>
+              <textarea id="c-msg" class="form-input" placeholder="Outline your active assets, target client size, or white-label goals..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">REQUEST ACCESS DEMO</button>
+            <div class="form-feedback" id="contact-form-feedback"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER & LIVE HEARBEAT WIDGET
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+              <polygon points="50,10 85,85 15,85" stroke="var(--primary-cyan)" stroke-width="6" fill="rgba(0, 240, 255, 0.1)"/>
+              <line x1="15" y1="90" x2="85" y2="90" stroke="var(--primary-cyan)" stroke-width="4"/>
+            </svg>
+            <span>ICEBERG</span>
+          </a>
+          <p>Iceberg HQ is a premier global provider of next-generation institutional trading terminals and high-frequency white-label brokerage solutions.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.54v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.3 1.83A9 9 0 0 1 2 19.57 12.1 12.1 0 0 0 6.56 21c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Platform Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="#solutions">White Label Brokerage</a></li>
+            <li><a href="#solutions">Prop Firm Core Engine</a></li>
+            <li><a href="#solutions">Aggregated Liquidity</a></li>
+            <li><a href="#solutions">FIX / REST API Access</a></li>
+            <li><a href="#technology">CRM Ledger Nodes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Platform Comparison</a></li>
+            <li><a href="#technology">System Architecture</a></li>
+            <li><a href="#roadmap">Integration Roadmap</a></li>
+            <li><a href="#faq">Technical FAQ</a></li>
+            <li><a href="#contact">Lead Consultations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Legal Compliances</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Terms of License</a></li>
+            <li><a href="#">Privacy Protocols</a></li>
+            <li><a href="#">Cookie Policies</a></li>
+            <li><a href="#">AML Risk Disclosures</a></li>
+            <li><a href="#">Regulatory Licenses</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 ICEBERG Fintech Solutions FZC. All institutional rights reserved.
+        </div>
+        
+        <!-- Live Status Indicators -->
+        <div class="footer-status-widget">
+          <div class="status-indicator">
+            <span class="status-pulse-dot"></span>
+            ALL SERVERS ACTIVE
+          </div>
+          <div class="status-uptime">
+            Uptime: <span>99.99%</span>
+          </div>
+          <div class="status-uptime uptime-ping-label">
+            Ping: <span id="footer-live-ping">5ms</span>
+          </div>
+        </div>
+
+        <!-- Developed with 🎣 in Dammam (Easter Egg Credit) -->
+        <div class="creator-credit">
+          Developed with <span>🎣</span> in Dammam
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Custom Javascript Engine -->
