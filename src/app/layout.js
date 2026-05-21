@@ -5,6 +5,7 @@ import "../../public/assets/css/styles.css";
 import BackgroundGlow from "@/components/BackgroundGlow";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NavigationWatcher from "@/components/NavigationWatcher";
 
 export const metadata = {
   title: "ICEBERG | Next-Gen Multi-Asset Trading Platform & CRM Solutions",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <NavigationWatcher />
         <BackgroundGlow />
         <Header />
         <main>{children}</main>

@@ -1,5 +1,6 @@
-import MobileSection from "@/components/MobileSection";
+import DownloadSection from "@/components/DownloadSection";
 
 export default function DownloadPage() {
-  return <MobileSection />;
+  return <DownloadSection />;
 }
+

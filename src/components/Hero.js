@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="section hero" id="home">
@@ -5,20 +7,20 @@ export default function Hero() {
       <canvas id="snowfall-canvas"></canvas>
 
       <div className="container grid hero-grid">
-        
+
         {/* Hero Details & Primary CTAs */}
         <div className="hero-content">
           <h1>Advanced Trading Platform Powered by Iceberg HQ</h1>
           <p className="hero-subtitle">
             Experience next-generation trading with the ICEBERG platform. Powered by Iceberg HQ technology, delivering institutional-grade execution, advanced analytics, and seamless multi-asset trading for professional brokerages and prop firms.
           </p>
-          
+
           <div className="hero-actions">
-            <a href="#contact" className="btn btn-primary">Start Trading Demo</a>
-            <a href="#hero-dashboard-mockup" className="btn btn-secondary">Web Terminal Preview</a>
+            <Link href="/contact" className="btn btn-primary">Start Trading Demo</Link>
+            <a href="#terminal-preview" className="btn btn-secondary">Web Terminal Preview</a>
           </div>
 
-          <div className="hero-latency-badge">
+          {/* <div className="hero-latency-badge">
             <div className="latency-item">
               <span className="latency-title">Average Execution</span>
               <span className="latency-value green">0.72ms</span>
@@ -31,13 +33,13 @@ export default function Hero() {
               <span className="latency-title">Global Latency</span>
               <span className="latency-value">&lt; 16ms</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Interactive High-Tech Trading Dashboard Mockup */}
         <div className="hero-visual">
           <div className="dashboard-mockup glass-panel frost-border" id="hero-dashboard-mockup">
-            
+
             {/* Terminal Header Controls */}
             <div className="terminal-header">
               <div className="terminal-dots">
@@ -46,8 +48,8 @@ export default function Hero() {
                 <span></span>
               </div>
               <div className="terminal-title">
-                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5zm-4 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9z"/></svg>
-                ICEBERG TERMINAL v2.8 (LIVE FEED)
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5zm-4 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9z" /></svg>
+                ICEBERG Terminal
               </div>
               <div className="terminal-toggle">
                 <button className="active" id="btn-term-dark">DARK</button>
@@ -57,7 +59,7 @@ export default function Hero() {
 
             {/* Terminal Interior */}
             <div className="terminal-body">
-              
+
               {/* Real-time Chart Sandbox */}
               <div className="terminal-chart-area">
                 <div className="chart-legend">

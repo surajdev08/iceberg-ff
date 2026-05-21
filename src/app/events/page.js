@@ -1,5 +1,6 @@
-import Roadmap from "@/components/Roadmap";
+import EventsSection from "@/components/EventsSection";
 
 export default function EventsPage() {
-  return <Roadmap />;
+  return <EventsSection />;
 }
+
