@@ -49,7 +49,7 @@ export default function Hero() {
               </div>
               <div className="terminal-title">
                 <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5zm-4 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9z" /></svg>
-                ICEBERG Terminal
+                ICEBERG <span className="hide-mobile">Terminal</span>
               </div>
               <div className="terminal-toggle">
                 <button className="active" id="btn-term-dark">DARK</button>

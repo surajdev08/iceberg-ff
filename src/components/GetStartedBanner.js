@@ -13,13 +13,12 @@ export default function GetStartedBanner() {
 
           {/* Left Block - Text Content */}
           <div className="get-started-content">
-            <div className="get-started-tag">
-              <span className="tag-pulse"></span>
-              Join the Vanguard
-            </div>
             <h2>Elevate Your Brokerage to the Institutional Tier</h2>
             <p>
-              Deploy next-generation multi-asset trading terminals, sub-millisecond liquidity routing grids, and automated risk managers. Engineered directly for modern prop firms, prime brokers, and professional trader communities.
+              Deploy next-generation multi-asset trading terminals,
+              sub-millisecond liquidity routing grids, and automated risk
+              managers. Engineered directly for modern prop firms, prime
+              brokers, and professional trader communities.
             </p>
           </div>
 
