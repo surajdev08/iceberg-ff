@@ -74,7 +74,7 @@ export default function TerminalPreview() {
             {/* Light Mode Mockup */}
             <div className={`viewport-image-container ${activeTab === "light" ? "visible" : "hidden"}`}>
               <img
-                src="/assets/images/trading-terminal-mock.png"
+                src="/assets/images/webterminal-light.png"
                 alt="ICEBERG Web Terminal Light Mode Preview"
                 className="mockup-img"
                 loading="lazy"
@@ -84,13 +84,18 @@ export default function TerminalPreview() {
             {/* Dark Mode Mockup */}
             <div className={`viewport-image-container ${activeTab === "dark" ? "visible" : "hidden"}`}>
               <img
-                src="/assets/images/trading-terminal-dark.png"
+                src="/assets/images/webterminal-dark.png"
                 alt="ICEBERG Web Terminal Dark Mode Preview"
                 className="mockup-img"
                 loading="lazy"
               />
             </div>
           </div>
+        </div>
+
+        {/* Powered by WeTrader Badge */}
+        <div className="terminal-powered-by">
+          Powered by <span>WeTrader</span>
         </div>
 
       </div>

@@ -4680,6 +4680,23 @@ textarea.form-input {
   transform: scale(1.008);
 }
 
+.terminal-powered-by {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: var(--font-headings);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.terminal-powered-by span {
+  color: var(--primary-cyan, #00f0ff);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .terminal-preview-section {

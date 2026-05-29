@@ -23,13 +23,24 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="contact-detail-card">
-              <div className="c-detail-icon">
+            <div className="contact-detail-card" style={{ alignItems: "flex-start" }}>
+              <div className="c-detail-icon" style={{ marginTop: "4px" }}>
                 <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
               </div>
               <div className="c-detail-text">
-                <span>global operation center</span>
-                <p>London EC2N, United Kingdom</p>
+                <span>Location</span>
+                <p style={{ lineHeight: "1.6" }}>
+                  Iceberg Global Information Technology LLC
+                  <br />
+                  <br />
+                  Suite 2907 / 2908
+                  <br />
+                  Floor 29
+                  <br />
+                  Iris Bay Tower - Business Bay,
+                  <br />
+                  Dubai, UAE
+                </p>
               </div>
             </div>
           </div>
